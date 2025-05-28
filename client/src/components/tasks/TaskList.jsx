@@ -27,7 +27,7 @@ const TaskList = () => {
       try {
         const token = localStorage.getItem("token");
 
-        const res = await axios.get("http://localhost:5000/api/tasks", {
+        const res = await axios.get("https://taskflow-ymt0.onrender.com/api/tasks", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

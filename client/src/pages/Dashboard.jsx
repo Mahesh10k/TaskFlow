@@ -41,7 +41,7 @@ const Dashboard = () => {
 
   const deleteTask = async (id) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/tasks/${id}`, {
+      const res = await fetch(`https://taskflow-ymt0.onrender.com/api/tasks/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,

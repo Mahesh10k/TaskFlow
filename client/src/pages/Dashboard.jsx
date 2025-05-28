@@ -8,7 +8,7 @@ const Dashboard = () => {
 
   const fetchTasks = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/tasks", {
+      const res = await fetch("https://taskflow-ymt0.onrender.com/api/tasks", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -22,7 +22,7 @@ const Dashboard = () => {
 
   const addTask = async (taskData) => {
     try {
-      const res = await fetch("http://localhost:5000/api/tasks", {
+      const res = await fetch("https://taskflow-ymt0.onrender.com/api/tasks", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

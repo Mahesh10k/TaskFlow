@@ -7,7 +7,7 @@ const TaskItem = ({ task, onDelete }) => (
       <p className="task-desc">{task.description}</p>
     </div>
     <button className="delete-btn" onClick={() => onDelete(task._id)}>
-      Delete❌
+      Delete
     </button>
   </div>
 );

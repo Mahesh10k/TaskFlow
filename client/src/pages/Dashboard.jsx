@@ -63,7 +63,7 @@ const Dashboard = () => {
     <div className="dashboard-container">
       <h1 className="dashboard-heading">Personal Task Dashboard</h1>
       <TaskForm onAddTask={addTask} />
-      <TaskList tasks={tasks} onDeleteTask={deleteTask} />
+      <TaskList tasks={tasks} onDeleteTask={deleteTask} />  
     </div>
   );
 };

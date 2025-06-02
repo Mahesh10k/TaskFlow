@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import TaskItem from "./TaskItem";
 import "../../index.css";
+import {memo} from "react"
 
-const TaskList = () => {
+const TaskList = memo(() => {
   const [tasks, setTasks] = useState([]);
 
   const deleteTask = async (id) => {
@@ -54,6 +55,6 @@ const TaskList = () => {
       )}
     </div>
   );
-};
+});
 
 export default TaskList;

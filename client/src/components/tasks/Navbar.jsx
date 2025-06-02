@@ -7,6 +7,7 @@ const Navbar = () => {
 
   const handleLogout = () => {
     localStorage.removeItem("token");
+    alert("user logged out")
     navigate("/login");
   };
 

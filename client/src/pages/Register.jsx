@@ -18,8 +18,9 @@ const Register = () => {
         body: JSON.stringify({ username, email, password }),
       });
       const data = await res.json();
+      console.log(data)
       if (res.ok) {
-        console.log("compl");
+        // console.log("compl");/
         navigate("/login");
       } else {
         alert(data.message || "Registration failed");

@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-var whitelist = [ 'https://localhost:5173', 'https://task-flow-9uwx.vercel.app',"https://task-flow.vercel.app"]
+var whitelist = [ 'https://localhost:3000', 'https://localhost:5173', 'https://task-flow-9uwx.vercel.app']
 var corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {
